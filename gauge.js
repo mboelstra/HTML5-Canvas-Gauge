@@ -96,7 +96,7 @@ var Upp = {
             var newValue = value * 1.0;
 
             // Check given value
-            if (this.options.minValue <= newValue <= this.options.maxValue) {
+            if (this.options.minValue <= newValue && newValue <= this.options.maxValue) {
                 // Apply new value
                 this.moveToValue(newValue);
             }
